@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    background-color: #f4f4e4;
+}
+hr{
+    margin: 50px 0;
+}
+figure{
+    margin: 0;
+}
+
+/***********
+    NAV
+************/
+nav{
+    width: 100%;
+
+    padding: 5px;
+    background-color: #fff;
+}
+nav section{
+    display: flex;
+    flex-direction: row;
+}
+ nav h3{
+     margin: 5px 40px;
+ }
+ nav p{
+     margin: 5px 20px;
+ }
+
+/***********
+    MAIN
+************/
+main{
+    display: flex;
+    flex-direction: row;
+
+    width: 1000px;
+    margin: 100px auto;
+}
+
+#sessao-aside{
+    width: 300px;
+    margin-right: 50px;
+}
+#sessao-aside div{
+    display: flex;
+    flex-direction: row;
+
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+#sessao-aside img{
+    max-width: 100%;
+}
+#sessao-aside div img{
+    border-radius: 20px;
+}
+#sessao-aside div img{
+    position: relative;
+    right: -160px;
+}
+#sessao-aside h3{
+    margin: 0;
+    padding: 0;
+}
+#sessao-aside p{
+    padding: 0;
+}
+
+/* CARDS INFERIORES */
+#sessao-aside article{
+    display: flex;
+    flex-direction: row;
+}
+#sessao-aside article div{
+    background-color: transparent;
+    flex-direction: column;
+}
+
+/* SOBRE */
+h4{
+    margin: 40px 10px;
+}
+
+
+#sessao-article{
+    width: 700px;
+}
+#sessao-article article{
+    border-radius: 4px;
+    background-color: aqua;
+    padding: 30px;
+    margin-bottom: 60px;
+}
+#sessao-article article header{
+    display: flex;
+    flex-direction: row;
+}
+#sessao-article article figure{
+    margin: 25px 0;
+}
+#sessao-article article img{
+    max-width: 100%;
+}
