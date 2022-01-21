@@ -1,4 +1,4 @@
-@media (min-width:1000px) {
+@media (max-width:2000px) {
 
 /* 
  Main começa aqui
@@ -6,7 +6,6 @@
 
 .news, .staff, .products {
     display:flex;
-    flex-direction: row;
     padding: 80px 50px 100px;
 }
 
@@ -32,9 +31,18 @@
 
 .news p {
     color: var(--gray);
+    font-size: 0.9em;
     font-weight: lighter;
     line-height:1.5em;
     margin-bottom: 30px;
+}
+
+.news a, .products a {
+    background-color:var(--blue);
+    font-size: 0.9em;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
 }
 
 .staff { 
@@ -43,44 +51,38 @@
     color: #fff;
 }
 
-.staff h2, .staff p {
-    width: 100%;
-    text-align: center;
-}
+    .staff h2, .staff p {
+        width: 100%;
+        text-align: center;
+    }
 
-.staff h2 {
-    margin:20px;
-    font-weight: normal;
-}
+    .staff h2 {
+        margin:20px;
+        font-size: 2.6em;
+        font-weight: normal;
+    }
 
-.staff > p {
-    margin-bottom: 80px;
-}
+    .staff > p {
+        margin-bottom: 80px;
+    }
 
-.staff div {
-    padding: 50px 30px;
-    border: 1px solid #aaa;
-}
+    .staff div {
+        padding: 50px 30px;
+        border: 1px solid #aaa;
+    }
 
-.staff img{
-    border-radius:50%;
-}
+    .staff img{
+        border-radius:50%;
+    }
 
-.staff h3 {
-    text-align: center;
-    font-weight: normal;
-    margin: 30px 0 10px;
-}
-.staff p {
-    color:#ddd;
-}
-
-/*teste*/
-.staff img:hover {
-    transform: rotate(360deg);
-    transition: transform 1s linear;
-    
-}
+    .staff h3 {
+        text-align: center;
+        font-weight: normal;
+        margin: 30px 0 10px;
+    }
+    .staff p {
+        color:#ddd;
+    }
 
 .products {
     justify-content:space-between;
@@ -102,6 +104,7 @@
 .products h2 {
     margin:20px;
     color: var(--blue);
+    font-size: 2.6em;
     font-weight: normal;
 }
 .products > p {
@@ -124,7 +127,6 @@
     margin-bottom: 30px;
 }
 
-
 } /* fim da media query  DESKTOP*/
 
 
@@ -143,15 +145,16 @@
 
 /* TABLET */
 
-@media(min-width:  600px){
-.news{
-    display: flex;
-    flex-direction: column;
-}
-.staff, .products {
+@media(max-width:  1000px){
+
+.news, .staff, .products {
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     padding: 80px 50px 100px;
+}
+.staff{
+    flex-direction: row;
+    flex-grow: 2;
 }
 
 .staff, .products {
@@ -159,12 +162,15 @@
 }
 
 .news div {
-    padding:0 40px;
-    border-right: 1px solid #ddd;
+    padding:40px 40px;
+    border-bottom: 1px solid #ddd;
 }
 
-.news div:last-child{
+.news div{
     border-right: none;
+}
+.news div:last-child{
+    border-bottom: none;
 }
 
 .news h3 {
@@ -227,6 +233,7 @@
 }
 
 .products {
+    width: 100%;
     justify-content:space-around;
 }
 
@@ -294,7 +301,7 @@
 
 /* CELULAR */
 
-@media(min-width:  300px){
+@media(max-width:  600px){
 .news{
     display: flex;
     flex-direction: column;
