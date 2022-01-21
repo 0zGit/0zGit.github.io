@@ -317,12 +317,15 @@
 }
 
 .news div {
-    padding:0 40px;
-    border-right: 1px solid #ddd;
+    padding:40px 40px;
+    border-bottom: 1px solid #ddd;
 }
 
-.news div:last-child{
+.news div{
     border-right: none;
+}
+.news div:last-child{
+    border-bottom: none;
 }
 
 .news h3 {
