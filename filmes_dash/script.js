@@ -11,8 +11,8 @@ function loadFilmes(){
 		let $titulo = $("<h2>");
 		let $resumo = $("<p>");
 		let $classificacao = $("<i>");
-		let $elenco = $("<ul>").attr('aria-label','Elenco:');
-		let $generos = $("<ul>").attr('aria-label','Generos:');
+		let $elenco = $("<ul>").attr('aria-label','Elenco');
+		let $generos = $("<ul>").attr('aria-label','Gêneros');
 
 		$filmes
 			.append($figura)
